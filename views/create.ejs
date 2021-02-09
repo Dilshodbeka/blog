@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<div class="container mt-5">
+    <form action="/create" method="POST">
+        <h3>Create blog content</h3>
+        <input type="text" name="title" class="form-control" placeholder="Enter title..." required>
+        <textarea name="content" cols="30" rows="10" class="form-control mt-3" placeholder="Enter text....." required></textarea>
+        <input type="submit" value="create" class="btn btn-md btn-success mt-5">
+    </form>
+</div>
+
+
+
+<%- include('./partials/footer') %>

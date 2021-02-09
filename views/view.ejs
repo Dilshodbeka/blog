@@ -1,0 +1,16 @@
+<%- include('./partials/header') %>
+<%- include('./partials/navbar') %>
+
+<div class="container mt-5">
+    <p class="text-muted text-sm-start">published at: <%= blog.postedAt %> </p>
+<div class="card">
+    <div class="card-header text-white bg-secondary">
+        <%= blog.title %>
+    </div>
+    <div class="card-body">
+      <p class="card-text"><%= blog.content %></p>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer') %>
